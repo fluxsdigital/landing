@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: auto;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 4rem;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-anchor: none;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .glow-violet {
+    box-shadow:
+      0 0 20px rgba(124, 58, 237, 0.3),
+      0 0 40px rgba(124, 58, 237, 0.15);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-primary/40 hover:shadow-[0_0_30px_rgba(124,58,237,0.15)];
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(124, 58, 237, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(124, 58, 237, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .mask-radial-fade {
+    mask-image: radial-gradient(ellipse 60% 60% at 50% 30%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 30%, black 30%, transparent 80%);
+  }
+}
