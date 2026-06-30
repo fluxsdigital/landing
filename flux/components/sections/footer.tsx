@@ -32,7 +32,9 @@ export function Footer() {
             <Linkedin className="h-4 w-4" />
           </a>
           <a
-            href="#"
+            href="https://instagram.com/flux.software"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Instagram"
             className="transition-colors hover:text-foreground"
           >
