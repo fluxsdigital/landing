@@ -25,7 +25,9 @@ export function Footer() {
             <Github className="h-4 w-4" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/fluxbr/"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="transition-colors hover:text-foreground"
           >
