@@ -18,7 +18,9 @@ export function Footer() {
 
         <div className="flex items-center gap-4 text-muted-foreground">
           <a
-            href="#"
+            href="https://github.com/fluxsdigital"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
             className="transition-colors hover:text-foreground"
           >
